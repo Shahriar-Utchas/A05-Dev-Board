@@ -12,10 +12,10 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body>
+  <body class="bg-[#F4F7FF]">
     <!-- Navbar -->
     <section class="navbar p-4 px-16">
-      <div class="navbar bg-slate-50 rounded-md shadow-sm">
+      <div class="navbar bg-white rounded-md shadow-sm">
         <div class="flex-1">
           <a class="btn btn-ghost text-xl">
             <img class="w-8" src="assets/logo.png" alt="logo" srcset="" />
@@ -27,7 +27,7 @@
             <img src="assets/checkbox.png" alt="checkbox" srcset="" />
             <span>23</span>
           </div>
-          <button class="cursor-pointer">
+          <button id="random-theme" class="cursor-pointer ">
             <img src="assets/theme-btn.png" alt="theme" srcset="" />
           </button>
         </div>
@@ -35,7 +35,7 @@
     </section>
     <!-- Main -->
     <section class="main m-4 mx-16 flex gap-8">
-      <div class="content bg-slate-50 rounded-md flex flex-col min-w-[80%]">
+      <div class="content bg-white rounded-md flex flex-col min-w-[80%]">
         <div class="heading p-4 flex justify-between items-center">
           <div
             class="flex items-center gap-2 p-4 bg-[#F4F7FF] rounded-md shadow-sm"
@@ -50,7 +50,7 @@
             class="flex items-center gap-2 p-4 bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] via-53% to-[#9BA8F8] rounded-md shadow-sm h-20 w-70"
           >
             <img class="w-16" src="assets/board.png" alt="" />
-            <div>
+            <div id="discover" class="cursor-pointer">
               <p>Discover Something</p>
               <p>New Today!</p>
             </div>
@@ -60,8 +60,8 @@
           >
             <img src="assets/calender.png" alt="" />
             <div>
-              <p>Wed,</p>
-              <p>Jul 24, 2024</p>
+              <p id="date-day">Wed,</p>
+              <p id="date-month-year">Jul 24, 2024</p>
             </div>
           </div>
         </div>
@@ -73,13 +73,13 @@
           <!-- card-1 -->
           <div class="card w-64 bg-[#f4f7fe] card-md shadow-sm">
             <div class="card-body">
-              <h2 class="bg-[#FFFFFF] px-1 w-16 h-6 rounded-sm shadow-sm">
+              <h2 class="bg-[#FFFFFF] px-1 w-18 h-6 rounded-sm shadow-sm">
                 ShopEase
               </h2>
               <h1 class="card-title">Fix Mobile Button Issues</h1>
               <p class="bg-[#FFFFFF] p-4 rounded-md shadow-sm">
                 Debug using Chrome DevTools, check for overlapping elements, and
-                ensure onClick works properly and ensure onClick works properly
+                ensure onClick works properly..
               </p>
               <hr class="border border-dotted border-gray-500 w-full" />
 
@@ -95,13 +95,13 @@
           <!-- card-2 -->
           <div class="card w-64 bg-[#f4f7fe] card-md shadow-sm">
             <div class="card-body">
-              <h2 class="bg-[#FFFFFF] px-1 w-16 h-6 rounded-sm shadow-sm">
-                ShopEase
+              <h2 class="bg-[#FFFFFF] px-1 w-20 h-6 rounded-sm shadow-sm">
+                CloudSync
               </h2>
-              <h1 class="card-title">Fix Mobile Button Issues</h1>
+              <h1 class="card-title">Add Dark Mode</h1>
               <p class="bg-[#FFFFFF] p-4 rounded-md shadow-sm">
-                Debug using Chrome DevTools, check for overlapping elements, and
-                ensure onClick works properly and ensure onClick works properly
+                Store the user's preference in localStorage, update CSS
+                variables dynamically, and apply a smooth transition effect.
               </p>
               <hr class="border border-dotted border-gray-500 w-full" />
 
@@ -117,13 +117,13 @@
           <!-- card-3 -->
           <div class="card w-64 bg-[#f4f7fe] card-md shadow-sm">
             <div class="card-body">
-              <h2 class="bg-[#FFFFFF] px-1 w-16 h-6 rounded-sm shadow-sm">
-                ShopEase
+              <h2 class="bg-[#FFFFFF] px-1 w-18 h-6 rounded-sm shadow-sm">
+                SwiftPay
               </h2>
-              <h1 class="card-title">Fix Mobile Button Issues</h1>
+              <h1 class="card-title">Optimize home page</h1>
               <p class="bg-[#FFFFFF] p-4 rounded-md shadow-sm">
                 Debug using Chrome DevTools, check for overlapping elements, and
-                ensure onClick works properly and ensure onClick works properly
+                ensure onClick works properly
               </p>
               <hr class="border border-dotted border-gray-500 w-full" />
 
@@ -137,12 +137,12 @@
             </div>
           </div>
           <!-- card-4 -->
-          <div class="card w-64 bg-[#f4f7fe] card-md shadow-sm">
+          <div class="card w-64 bg-[rgb(244,247,254)] card-md shadow-sm">
             <div class="card-body">
-              <h2 class="bg-[#FFFFFF] px-1 w-16 h-6 rounded-sm shadow-sm">
-                ShopEase
+              <h2 class="bg-[#FFFFFF] px-1 w-12 h-6 rounded-sm shadow-sm">
+                Meta
               </h2>
-              <h1 class="card-title">Fix Mobile Button Issues</h1>
+              <h1 class="card-title">Add New Emoji</h1>
               <p class="bg-[#FFFFFF] p-4 rounded-md shadow-sm">
                 Debug using Chrome DevTools, check for overlapping elements, and
                 ensure onClick works properly and ensure onClick works properly
@@ -161,10 +161,10 @@
           <!-- card-5 -->
           <div class="card w-64 bg-[#f4f7fe] card-md shadow-sm">
             <div class="card-body">
-              <h2 class="bg-[#FFFFFF] px-1 w-16 h-6 rounded-sm shadow-sm">
-                ShopEase
+              <h2 class="bg-[#FFFFFF] px-1 w-20 h-6 rounded-sm shadow-sm">
+                GoogleLLC
               </h2>
-              <h1 class="card-title">Fix Mobile Button Issues</h1>
+              <h1 class="card-title">intrigate OpenAI API</h1>
               <p class="bg-[#FFFFFF] p-4 rounded-md shadow-sm">
                 Debug using Chrome DevTools, check for overlapping elements, and
                 ensure onClick works properly and ensure onClick works properly
@@ -183,10 +183,10 @@
           <!-- card-6 -->
           <div class="card w-64 bg-[#f4f7fe] card-md shadow-sm">
             <div class="card-body">
-              <h2 class="bg-[#FFFFFF] px-1 w-16 h-6 rounded-md shadow-sm">
-                ShopEase
+              <h2 class="bg-[#FFFFFF] px-1 w-20 h-6 rounded-md shadow-sm">
+                GlassDoar
               </h2>
-              <h1 class="card-title">Fix Mobile Button Issues</h1>
+              <h1 class="card-title">Improve Job Searching</h1>
               <p class="bg-[#FFFFFF] p-4 rounded-sm shadow-sm">
                 Debug using Chrome DevTools, check for overlapping elements, and
                 ensure onClick works properly and ensure onClick works properly
@@ -206,7 +206,7 @@
       </div>
       <!-- Sidebar -->
       <!-- Activity Log -->
-      <div class="activity-log rounded-md bg-slate-50 w-full p-4 px-8">
+      <div class="activity-log rounded-md bg-white w-full p-4 px-8">
         <div class="flex">
           <img src="assets/activity.png" alt="" />
           <p>Activity Log</p>
@@ -218,5 +218,7 @@
         <hr class="border border-dotted border-gray-500 w-full" />
       </div>
     </section>
+    <script src="JS/utilities.js"></script>
+    <script src="JS/indexPage.js"></script>
   </body>
 </html>
