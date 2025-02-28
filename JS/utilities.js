@@ -13,3 +13,11 @@ function getDate() {
       formattedDay: days[day]
     };
 }
+
+function getTime(){
+    const currentDate = new Date();
+    const hour = currentDate.getHours();
+    const minute = currentDate.getMinutes();
+    const second = currentDate.getSeconds();
+    return `${hour}:${minute}:${second}`;
+}
