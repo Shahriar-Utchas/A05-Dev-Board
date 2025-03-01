@@ -17,10 +17,10 @@
     <section class="navbar p-4 px-16">
       <div class="navbar bg-white rounded-md shadow-sm">
         <div class="flex-1">
-          <a class="btn btn-ghost text-xl">
+          <div class="btn btn-ghost text-xl">
             <img class="w-8" src="assets/logo.png" alt="logo" srcset="" />
-            Dev<span class="font-bold">Board</span>
-          </a>
+          </div>
+          <span class="text-xl"> Dev<span class="font-bold">Board</span> </span>
         </div>
         <div class="flex justify-center items-center gap-4">
           <div class="flex items-center gap-2">
@@ -34,9 +34,11 @@
       </div>
     </section>
     <!-- Main -->
-    <section class="main m-4 mx-16 flex gap-8">
-      <div class="content bg-white rounded-md flex flex-col min-w-[80%]">
-        <div class="heading p-4 flex justify-between items-center">
+    <section class="main m-4 md:mx-16 flex gap-8">
+      <div class="content bg-white rounded-md flex flex-col md:min-w-[80%]">
+        <div
+          class="heading p-4 flex flex-col gap-3 lg:flex-row justify-between items-center"
+        >
           <div
             class="flex items-center gap-2 p-4 bg-[#F4F7FF] rounded-md shadow-sm"
           >
@@ -47,10 +49,11 @@
             </div>
           </div>
           <div
-            class="flex items-center gap-2 p-4 bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] via-53% to-[#9BA8F8] rounded-md shadow-sm h-20 w-70"
+            id="discover"
+            class="flex items-center gap-2 p-4 bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] via-53% to-[#9BA8F8] rounded-md shadow-sm h-20 w-52 md:w-70 cursor-pointer"
           >
             <img class="w-16" src="assets/board.png" alt="" />
-            <div id="discover" class="cursor-pointer">
+            <div>
               <p>Discover Something</p>
               <p>New Today!</p>
             </div>
@@ -69,9 +72,11 @@
 
         <!-- Cards -->
 
-        <div class="cards p-4 px-8 grid grid-cols-3 gap-4">
+        <div
+          class="cards p-4 md:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+        >
           <!-- card-1 -->
-          <div class="card w-64 bg-[#f4f7fe] card-md shadow-sm">
+          <div class="card w-48 md:w-56 lg:w-64 bg-[#f4f7fe] card-md shadow-sm">
             <div class="card-body">
               <h2 class="bg-[#FFFFFF] px-1 w-18 h-6 rounded-sm shadow-sm">
                 ShopEase
@@ -100,7 +105,7 @@
             </div>
           </div>
           <!-- card-2 -->
-          <div class="card w-64 bg-[#f4f7fe] card-md shadow-sm">
+          <div class="card w-48 md:w-56 lg:w-64 bg-[#f4f7fe] card-md shadow-sm">
             <div class="card-body">
               <h2 class="bg-[#FFFFFF] px-1 w-20 h-6 rounded-sm shadow-sm">
                 CloudSync
@@ -127,7 +132,7 @@
             </div>
           </div>
           <!-- card-3 -->
-          <div class="card w-64 bg-[#f4f7fe] card-md shadow-sm">
+          <div class="card w-48 md:w-56 lg:w-64 bg-[#f4f7fe] card-md shadow-sm">
             <div class="card-body">
               <h2 class="bg-[#FFFFFF] px-1 w-18 h-6 rounded-sm shadow-sm">
                 SwiftPay
@@ -154,7 +159,9 @@
             </div>
           </div>
           <!-- card-4 -->
-          <div class="card w-64 bg-[rgb(244,247,254)] card-md shadow-sm">
+          <div
+            class="card w-48 md:w-56 lg:w-64 bg-[rgb(244,247,254)] card-md shadow-sm"
+          >
             <div class="card-body">
               <h2 class="bg-[#FFFFFF] px-1 w-12 h-6 rounded-sm shadow-sm">
                 Meta
@@ -181,7 +188,7 @@
             </div>
           </div>
           <!-- card-5 -->
-          <div class="card w-64 bg-[#f4f7fe] card-md shadow-sm">
+          <div class="card w-48 md:w-56 lg:w-64 bg-[#f4f7fe] card-md shadow-sm">
             <div class="card-body">
               <h2 class="bg-[#FFFFFF] px-1 w-20 h-6 rounded-sm shadow-sm">
                 GoogleLLC
@@ -208,7 +215,7 @@
             </div>
           </div>
           <!-- card-6 -->
-          <div class="card w-64 bg-[#f4f7fe] card-md shadow-sm">
+          <div class="card w-48 md:w-56 lg:w-64 bg-[#f4f7fe] card-md shadow-sm">
             <div class="card-body">
               <h2 class="bg-[#FFFFFF] px-1 w-20 h-6 rounded-md shadow-sm">
                 GlassDoar
@@ -240,13 +247,18 @@
       </div>
       <!-- Sidebar -->
       <!-- Activity Log -->
-      <div id="activity-log" class="activity-log rounded-md bg-white w-full p-4 px-8">
+      <div
+        id="activity-log"
+        class="activity-log rounded-md bg-white w-full p-4 px-8"
+      >
         <div class="flex">
           <img src="assets/activity.png" alt="" />
           <p>Activity Log</p>
         </div>
         <br />
-        <button id="clear-activity" class="btn btn-primary">Clear History</button>
+        <button id="clear-activity" class="btn btn-primary">
+          Clear History
+        </button>
         <br />
         <br />
         <hr class="border border-dotted border-gray-500 w-full" />
