@@ -53,7 +53,11 @@ for (button of buttons) {
     const taskCompletedCount = document.getElementById("task-complete-count");
     const taskCompletedCountResult = parseInt(taskCompletedCount.innerText) + 1;
     taskCompletedCount.innerText = taskCompletedCountResult;
-
+    if (parseInt(taskAssignedCount.innerText) == 0) {
+      alert("congress!! You have completed all the tasks!");
+    } else {
+      alert("Task completed successfully!");
+    }
     //disable the button
     this.disabled = true;
   });

@@ -4,8 +4,151 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog</title>
+    <link rel="icon" href="assets/logo.png" type="image/png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body>
-    hello from blog
+  <body class="bg-[#F4F7FF]">
+    <!-- Navbar -->
+    <section class="navbar md:p-4 px-12 md:px-16">
+      <div class="navbar bg-white rounded-md shadow-sm">
+        <div class="flex-1">
+          <div class="btn btn-ghost text-xl">
+            <img class="w-8" src="assets/logo.png" alt="logo" srcset="" />
+          </div>
+          <span class="text-xl"> Dev<span class="font-bold">Board</span> </span>
+        </div>
+        <div class="flex justify-center items-center gap-4">
+          <a href="index.html">
+            <button class="btn btn-primary cursor-pointer">Back to Home</button>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Blogs -->
+    <sction class="blogs">
+      <h1 class="text-center font-bold text-xl md:text-2xl">Blogs</h1>
+      <!-- Questions -->
+      <div class="md:p-4 px-12 md:px-16">
+        <div class="flex flex-col items-center gap-8 p-4">
+          <!-- Question-1 -->
+          <div class="bg-white rounded-md shadow-sm p-4">
+            <p class="font-bold">
+              Question-1: What are the different ways to select an element in
+              the DOM?
+            </p>
+            <br />
+            <hr class="border border-dotted border-gray-500" />
+            <br />
+            <p>
+              Elements in the DOM can be selected using different methods.
+              <span class="font-semibold">document.getElementById("id")</span>
+              selects an element by its ID,
+              <span class="font-semibold"
+                >document.getElementsByClassName("class")</span
+              >
+              selects elements by class and returns a collection,
+              <span class="font-semibold"
+                >document.getElementsByTagName("tag")</span
+              >
+              selects elements by tag name,
+              <span class="font-semibold">document.querySelector("selector")</span>
+              selects the first element matching a CSS selector, and
+              <span class="font-semibold"
+                >document.querySelectorAll("selector")</span
+              >
+              selects all elements matching a CSS selector and returns a
+              <span class="font-semibold">NodeList</span>.
+            </p>
+          </div>
+          <!-- Question-2 -->
+          <div class="bg-white rounded-md shadow-sm p-4">
+            <p class="font-bold">
+              Question-2: What is the difference between innerHTML, innerText,
+              and textContent ?
+            </p>
+            <br />
+            <hr class="border border-dotted border-gray-500" />
+            <br />
+            <p>
+              <span class="font-semibold">innerHTML</span>,
+              <span class="font-semibold">innerText</span>, and
+              <span class="font-semibold">textContent</span> are used to manipulate
+              content inside an element.
+              <span class="font-semibold">innerHTML</span> retrieves or sets the
+              HTML inside an element, including tags.
+              <span class="font-semibold">innerText</span> retrieves or sets only
+              the visible text, ignoring hidden elements.
+              <span class="font-semibold">textContent</span>
+              retrieves or sets all text content, including hidden elements, but
+              treats everything as plain text, ignoring HTML tags.
+            </p>
+          </div>
+          <!-- Question-3 -->
+          <div class="bg-white rounded-md shadow-sm p-4">
+            <p class="font-bold">
+              Question-3: What is event delegation in the DOM?
+            </p>
+            <br />
+            <hr class="border border-dotted border-gray-500" />
+            <br />
+            <p>
+              <span class="font-semibold">Event delegation</span> is a technique
+              where a <span class="font-semibold">parent element</span> is used to
+              handle events for its
+              <span class="font-semibold">child elements</span>. This is beneficial
+              when dealing with dynamically created elements or optimizing
+              performance. Instead of attaching event listeners to multiple
+              child elements, a single event listener is added to the parent,
+              which detects events from its children.
+            </p>
+          </div>
+          <!-- Question-4 -->
+          <div class="bg-white rounded-md shadow-sm p-4">
+            <p class="font-bold">
+              Question-4: What is event bubbling in the DOM?
+            </p>
+            <br />
+            <hr class="border border-dotted border-gray-500" />
+            <br />
+            <p>
+              <span class="font-semibold">Event bubbling</span> occurs when an event
+              triggered on a
+              <span class="font-semibold">child element</span> propagates upward
+              through its <span class="font-semibold">parent elements</span>. This
+              behavior can cause unintended event triggers on parent elements.
+              To prevent this,
+              <span class="font-semibold">event.stopPropagation()</span> can be used
+              to stop the event from bubbling up the DOM tree.
+            </p>
+          </div>
+          <!-- Question-5 -->
+          <div class="bg-white rounded-md shadow-sm p-4">
+            <p class="font-bold">
+              Question-5: How do you create, add, and remove elements using
+              JavaScript?
+            </p>
+            <br />
+            <hr class="border border-dotted border-gray-500" />
+            <br />
+            <p>
+              Elements in the DOM can be created using
+              <span class="font-semibold">document.createElement("tag")</span>. They
+              can be added to the document using
+              <span class="font-semibold">parent.appendChild(element)</span>. To
+              remove an element,
+              <span class="font-semibold">element.remove()</span> or
+              <span class="font-semibold">parent.removeChild(element)</span> is
+              used.
+            </p>
+          </div>
+        </div>
+      </div>
+    </sction>
+    <br />
   </body>
 </html>
