@@ -14,7 +14,7 @@
   </head>
   <body class="bg-[#F4F7FF]">
     <!-- Navbar -->
-    <section class="navbar p-4 px-16">
+    <section class="navbar md:p-4 px-12 md:px-16">
       <div class="navbar bg-white rounded-md shadow-sm">
         <div class="flex-1">
           <div class="btn btn-ghost text-xl">
@@ -50,7 +50,7 @@
           </div>
           <div
             id="discover"
-            class="flex items-center gap-2 p-4 bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] via-53% to-[#9BA8F8] rounded-md shadow-sm h-20 w-52 md:w-70 cursor-pointer"
+            class="flex items-center gap-2 p-4 bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] via-53% to-[#9BA8F8] rounded-md shadow-sm h-20 w-47 md:w-70 cursor-pointer"
           >
             <img class="w-16" src="assets/board.png" alt="" />
             <div>
@@ -249,14 +249,14 @@
       <!-- Activity Log -->
       <div
         id="activity-log"
-        class="activity-log rounded-md bg-white w-full p-4 px-8"
+        class="activity-log rounded-md bg-white p-2 md:p-4 md:px-8"
       >
         <div class="flex">
-          <img src="assets/activity.png" alt="" />
-          <p>Activity Log</p>
+          <img class="w-4 md:w-6" src="assets/activity.png" alt="" />
+          <p class="text-sm md:text-lg">Activity Log</p>
         </div>
         <br />
-        <button id="clear-activity" class="btn btn-primary">
+        <button id="clear-activity" class="btn btn-primary w-24 h-12 md:w-32">
           Clear History
         </button>
         <br />
